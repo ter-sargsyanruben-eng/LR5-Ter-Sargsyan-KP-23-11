@@ -1,37 +1,40 @@
-# The command that runs the program. If the interpreter field is set, it will have priority and this run command will do nothing
+# Блок запуска проекта
 run = "python3 main.py"
 
-# The primary language of the repl. There can be others, though!
+# Блок указания языка проекта
 language = "python3"
+
+# Блок указания главного файла
 entrypoint = "main.py"
-# A list of globs that specify which files and directories should
-# be hidden in the workspace.
+
+# Блок скрытых служебных файлов
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
+
+# Блок версии Python
 modules = ["python-3.10"]
 
-# Specifies which nix channel to use when building the environment.
+# Блок настройки Nix-окружения
 [nix]
 channel = "stable-22_11"
 packages = ["gdb"]
 
-[env]
-
-# Enable unit tests. This is only supported for a few languages.
+# Блок unit-тестов
 [unitTest]
 language = "python3"
 
-# These are the files that need to be preserved when this 
-# language template is used as the base language template
-# for Python repos imported from GitHub
+# Блок импорта из GitHub
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config", "venv"]
 
+# Блок развертывания проекта
 [deployment]
 run = ["sh", "-c", "python3 main.py"]
 
+# Блок настройки портов
 [[ports]]
 localPort = 5000
 externalPort = 80
 
+# Блок режима агента Replit
 [agent]
 expertMode = true

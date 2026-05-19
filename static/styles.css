@@ -1,40 +1,33 @@
+/* Блок общих настроек страницы */
 html, body {
   height: 100%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Блок оформления текста и ссылок */
 p, a {
   line-height: 1.5em;
 }
 
+/* Блок скрытия индикатора загрузки до запуска модели */
 #loading {
   display: none;
 }
 
-#settings {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
+/* Блок оформления заголовков и ссылок */
 h1, a {
   color: #6706ce;
 }
 
-label {
-  font-weight: 50px;
-}
-
-a {
-  text-decoration: none;
-}
-
+/* Блок размещения основного содержимого страницы */
 main {
   width: 40em;
   margin: auto;
   text-align: center;
 }
 
+/* Блок оформления кнопок */
 .styled-button {
   color: #fff;
   text-align: center;
@@ -50,26 +43,14 @@ main {
   width: 100%;
 }
 
-.styled-button-turqouise {
-  border: none;
-  color: black;
-  background-color: #00ffce;
-}
-
+/* Блок области распознавания */
 .infer-widget {
   width: 480px;
   margin: auto;
 }
 
+/* Блок размещения ссылок */
 .links {
   display: flex;
   text-align: center;
-}
-
-.links:first-child {
-  flex: 0 50%;
-}
-
-.links:last-child {
-  flex: 1 50%;
 }
