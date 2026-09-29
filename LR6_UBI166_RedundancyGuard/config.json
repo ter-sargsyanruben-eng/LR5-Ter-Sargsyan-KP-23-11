@@ -1,0 +1,22 @@
+{
+  "allowed_components": [
+    "web_service",
+    "database",
+    "cache",
+    "system_monitor"
+  ],
+  "obsolete_components": [
+    "legacy_worker",
+    "old_api"
+  ],
+  "running_components": [
+    "web_service",
+    "database",
+    "cache",
+    "system_monitor",
+    "debug_service",
+    "legacy_worker",
+    "temp_worker",
+    "old_api"
+  ]
+}
